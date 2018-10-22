@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private List<PackageModel> getPackages() {
+
         List<PackageModel> modelList = new ArrayList<PackageModel>();
 
         modelList.add(new PackageModel("R U A Virus 1?", 1));
