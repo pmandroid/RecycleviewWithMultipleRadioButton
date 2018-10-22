@@ -36,34 +36,11 @@ public class MainActivity extends AppCompatActivity {
     private List<PackageModel> getPackages() {
         List<PackageModel> modelList = new ArrayList<PackageModel>();
 
-        List<String> priceList = new ArrayList<String>();
-
-        priceList.add("$155 Half Yearly");
-        priceList.add("$277 Yearly");
-        modelList.add(new PackageModel("Virus 1", 1));
-
-        priceList = new ArrayList<String>();
-
-        priceList.add("$225 Half Yearly");
-        priceList.add("$410 Yearly");
-        modelList.add(new PackageModel("Virus 2", 2));
-
-        priceList = new ArrayList<String>();
-
-        priceList.add("$288 Half Yearly");
-        priceList.add("$545 Yearly");
-        modelList.add(new PackageModel("Virus 3", 3));
-
-        priceList = new ArrayList<String>();
-
-        priceList.add("$115 Half Yearly");
-        priceList.add("$200 Yearly");
-        modelList.add(new PackageModel("Virus 4", 4));
-
-        priceList = new ArrayList<String>();
-
-        priceList.add("$690 Yearly");
-        modelList.add(new PackageModel("Virus 5", 5));
+        modelList.add(new PackageModel("R U A Virus 1?", 1));
+        modelList.add(new PackageModel("R U A Virus 2?", 2));
+        modelList.add(new PackageModel("R U A Virus 3?", 3));
+        modelList.add(new PackageModel("R U A Virus 4?", 4));
+        modelList.add(new PackageModel("R U A Virus 5?", 5));
 
         return modelList;
     }
