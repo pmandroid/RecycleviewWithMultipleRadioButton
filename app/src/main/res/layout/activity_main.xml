@@ -16,6 +16,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/bt_get_data"
+        android:layout_width="match_parent"
+        android:text="getData"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/package_lst"
         android:layout_width="match_parent"

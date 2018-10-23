@@ -21,6 +21,9 @@ public class PackageRecyclerViewAdapter extends
 
     private RadioGroup radioGroupLastChecked = null;
 
+
+
+
     public PackageRecyclerViewAdapter(List<PackageModel> packageListIn
             , Context ctx) {
         packageList = packageListIn;
@@ -60,7 +63,7 @@ public class PackageRecyclerViewAdapter extends
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                if (radioGroupLastChecked != null) {
+
 
                     RadioButton rbYes = (RadioButton) radioGroup.getChildAt(0);
                     RadioButton rbNo = (RadioButton) radioGroup.getChildAt(1);
@@ -84,8 +87,7 @@ public class PackageRecyclerViewAdapter extends
                             "Radio button clicked " + radioGroup.getCheckedRadioButtonId(),
                             Toast.LENGTH_SHORT).show();
 
-                }
-                radioGroupLastChecked = radioGroup;
+
 
             }
         });
@@ -109,5 +111,8 @@ public class PackageRecyclerViewAdapter extends
 
 
         }
+    }
+    public List<PackageModel> getPackageList() {
+        return packageList;
     }
 }
